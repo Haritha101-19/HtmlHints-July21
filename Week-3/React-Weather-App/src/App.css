@@ -1,0 +1,125 @@
+body{
+  background: radial-gradient(#8e8c8f,#ff8800,#8e8c8f,#d6d8d6,#8e8c8f);
+  background-position: right;
+  background-size: cover;
+  background-repeat: repeat-x;
+  height: 100vh;
+}
+.App {
+  text-align: center;
+}
+header{
+  background-color: rgba(255,255,255,0.7);
+}
+header h2{
+  color: #d63d85;
+  font-size: 42px;
+  font-weight: 600;
+  font-style: oblique;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.card{
+  width: 35vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px auto;
+  border: 1px solid radial-gradient(#8e8c8f,#ff8800,#8e8c8f,#d6d8d6,#8e8c8f);
+  box-shadow: 0px 0px 100px rgba(0,0,0,0.7);
+}
+.card-img{
+ height: 60vh;
+ opacity: 0.9;
+}
+.label{
+  margin-top: 10px;
+  margin-right: 10px ;
+  font-weight: 500;
+  font-size: 18px;
+}
+.search{
+  position: relative;
+  top: 15px;
+  width: 140px;
+  height: fit-content;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+.bg-secondary{
+  height: 32px;
+  padding: 9px;
+  position: relative;
+  left: 0px;
+  top: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.city-name{
+  position: relative;
+  top: -10px;
+  font-size: 30px;
+}
+.country-name{
+  position: relative;
+  top: -20px;
+}
+.temperature{
+  position: relative;
+  top: -10px;
+}
+.wind{
+  position: relative;
+  top: -20px;
+}
+footer{
+  position: relative;
+  top: 30px;
+  height: 6vh;
+  background-color: rgba(255,255,255,0.2);
+}
+footer code{
+  font-size: 20px;
+  color: #ff8800;
+}
+footer a{
+  color:black;
+  text-decoration: none;
+}
+/*Tab Devices*/
+@media only screen and (max-width:750px) {
+  .card{
+    width: 50vw;
+  }
+  .form-item{
+    display: flex;
+    flex-direction: column;
+  }
+  .search{
+    width: 150px;
+  }
+  .bg-secondary{
+    position: relative;
+    top: -16px;
+    left: 150px;
+    max-width: 30px;
+  }
+}
+/*Mobile Devices*/
+@media only screen and (max-width:360px) {
+  header{
+    max-width:360px;
+  }
+  .card{
+    width: 50vw;
+  }
+  .search{
+    width: 90px;
+  }
+  .bg-secondary{
+    position: relative;
+    left: 90px;
+  }
+  footer{
+    top: 50px;
+  }
+}
