@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <div class="loginvia">
+            <h2>Login Via</h2>
+            <div class="images">
+                <img src="google.png" alt="Google">
+                <img src="facebook.png" alt="Facebook">
+                <img src="linkedin.png" alt="Linkedin">
+            </div>
+        </div>
+        <div class="login">
+            <form action="" method="" onsubmit="return false;">
+                <h2>Login</h2>
+                <!--Username-->
+                <input type="text" name="username" id="username" placeholder="Username">
+                <br>
+                <p><small id="username_errorMsg"></small></p>
+                <br>
+                
+                <!--Email-->
+                <input type="email" name="email" id="email" placeholder="Email">
+                <br>
+                <p><small id="email_errorMsg"></small></p>
+                <br>
+
+                <!--Password-->
+                <input type="password" name="password" id="password" placeholder="Password">
+                <br>
+                <p><small id="password_errorMsg"></small></p>
+    
+                <!--Alter option-->
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember"><small>Remember Me</small></label>
+                <p><small>Forget Password?</small></p>
+    
+                <!--Login-->
+                <button id="loginBtn">Login</button>
+            </form>
+        </div>
+    </div>
+    <img id="ribbon" src="ribbon.png" alt="">
+    
+    
+ <script src="authentic.js"></script>   
+</body>
+</html>
